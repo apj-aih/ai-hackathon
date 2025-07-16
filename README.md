@@ -42,7 +42,7 @@ You’ve been provided with:
 
 ```bash
 docker run -d --name jupyterlab --gpus all --network host \
--v /home/demouser/Documents/workspace/kahoot_hackathon:/home/jovyan/work \
+-v /home/demouser/Documents/workspace/ai-hackathon:/home/jovyan/work \
 -e JUPYTER_TOKEN='password' \
 --user root -e GRANT_SUDO=yes \
 jupyter/tensorflow-notebook start-notebook.sh \
@@ -56,7 +56,7 @@ jupyter/tensorflow-notebook start-notebook.sh \
 ### 🌐 Step 2: Open JupyterLab
 
 1. Open Firefox browser.
-2. Go to: [http://127.0.0.1:8888](http://127.0.0.1:8888)
+2. Go to: [http://localhost:8888](http://localhost:8888)
 3. Enter password: **`password`**
 
 ---
