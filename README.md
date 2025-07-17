@@ -22,7 +22,7 @@ This repo provides a working base version. Your job is to **hack, extend, and wi
 | Notebook | Purpose |
 |----------|---------|
 | `00_setup_environment.ipynb` | Installs all required dependencies (Playwright, Tesseract, Python libs, etc.) |
-| `01_kahoot_bot_playground.ipynb` | Main automation logic for playing Kahoot using screenshots + LLM |
+| `01_kahoot_bot_playground.ipynb` | Main automation logic for playing Kahoot using screenshots + OCR + LLM |
 
 ---
 
@@ -42,7 +42,7 @@ You’ve been provided with:
 
 ```bash
 docker run -d --name jupyterlab --gpus all --network host \
--v /home/demouser/Documents/workspace/ai-hackathon:/home/jovyan/work \
+-v /home/demouser/Documents/workspace:/home/jovyan/work \
 -e JUPYTER_TOKEN='password' \
 --user root -e GRANT_SUDO=yes \
 jupyter/tensorflow-notebook start-notebook.sh \
@@ -81,7 +81,7 @@ ollama pull
 
 ## 💡 What to Do Next?
 
-1. Open `00_setup_environment.ipynb` and run all cells to set up the environment.
+1. Open `00_setup_environment.ipynb` (inside `work` folder) and run all cells to set up the environment.
 2. Open `01_kahoot_bot_playground.ipynb`, join a Kahoot game, and test the bot.
 3. Start improving:
    - Use better models or prompting.
