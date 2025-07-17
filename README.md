@@ -69,7 +69,7 @@ Inside a terminal:
 ollama list
 ```
 
-You should see a list of available models. Make sure at least one is downloaded (e.g., `qwen2.5vl:7b-fp16`).
+You should see a list of available models. Make sure at least one is downloaded (e.g., `llama3.1:8b`).
 
 Pull additional models using:
 ```bash
